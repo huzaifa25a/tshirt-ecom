@@ -64,22 +64,22 @@ const App = () => {
   return (
     <>
       <Header />
-      <div className="flex flex-col gap-10 flex-wrap">
+      <div className="flex flex-col gap-10">
         {/* HERO SECTION */}
-        <div className="flex flex-row justify-center items-center gap-18 bg-[#fff6ea] p-15 max-h-[80vh]">
-          <div className="flex flex-col gap-10 w-auto">
+        <div className="p-4 w-full flex flex-row justify-around gap-10 items-center bg-[#fff6ea] flex-wrap">
+          <div className="flex flex-col gap-10 w-100">
             <h2 className="text-[48px]">Shop Awesome T-Shirts</h2>
             <span className="text-[18px] font-medium">High-quality, unique designs at affordable prices</span>
             <button className="p-2 rounded shadow-sm bg-[#ffead0] w-50 self-center hover:shadow-lg duration-200 hover:scale-103 transition-all cursor-pointer">
               View Our Collection
             </button>
           </div>
-          <img src={heroImage} className="h-150" />
+          <img src={heroImage} className="lg:h-118.75 sm:h-90 md:h-110" />
         </div>
         {/* PRODUCTS SECTION */}
         <div className="flex flex-col items-center gap-10 p-6">
           <h2 className="text-[36px]">Featured Products</h2>
-          <div className="flex flex-row gap-10 items-center justify-center">
+          <div className="flex flex-row gap-10 items-center justify-center flex-wrap">
             {tshirts.map((tshirt, index) => (
               <div
                 key={index}
@@ -108,8 +108,8 @@ const App = () => {
         </div>
         {/* TESTIMONIALS SECTION */}
         <div className="flex flex-col items-center gap-10 bg-[#fff6ea] p-6">
-          <h2 className="text-[36px]">What our customers say</h2>
-          <div className="flex flex-row gap-5 items-center justify-center w-full p-6">
+          <h2 className="text-[36px] text-center">What our customers say</h2>
+          <div className="flex flex-row gap-5 items-center justify-center w-full p-6 flex-wrap">
             {testimonials.map((testimonial, index) => (
               <div
                 key={index}
@@ -137,11 +137,11 @@ const App = () => {
           </div>
         </div>
          {/* SUBSCRIBE SECTION */}
-         <div className="flex flex-col items-center gap-10">
-          <h2 className="text-[36px]">Subscribe for Updates</h2>
-          <div className="flex flex-col gap-5 items-center justify-center w-full p-6">
-            <span>Subcribe for receiving latest collection news, promotions and special offers.</span>
-            <div className="flex flex-row gap-3">
+         <div className="p-2 pflex flex-col items-center gap-10">
+          <h2 className="text-[36px] text-center">Subscribe for Updates</h2>
+          <div className="flex flex-col gap-5 items-center justify-center w-full p-6 flex-wrap">
+            <span className="text-center">Subcribe for receiving latest collection news, promotions and special offers.</span>
+            <div className="flex flex-row gap-3 flex-wrap justify-center">
               <input
                 className="p-2 w-[300px] border-gray-300 border-2 rounded-lg focus:outline-0 focus:border-gray-500"
                 type="text"
