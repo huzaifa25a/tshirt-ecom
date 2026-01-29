@@ -5,7 +5,7 @@ const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   return (
     <>
-      <div className='flex flex-row justify-between p-6 border-b-2 border-gray-300'>
+      <div className='fixed md:static top-0 w-full bg-white flex flex-row justify-between p-6 border-b-2 border-gray-300'>
           <span className='text-[18px] font-bold'>Funky Store</span>
           <div className='hidden md:flex gap-12'>
             <span className='cursor-pointer'>Home</span>
