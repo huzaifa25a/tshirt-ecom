@@ -64,7 +64,7 @@ const App = () => {
   return (
     <>
       <Header />
-      <div className="flex flex-col gap-10">
+      <div className="flex flex-col gap-10 md:mt-0 mt-20">
         {/* HERO SECTION */}
         <div className="p-4 w-full flex flex-row justify-around gap-10 items-center bg-[#fff6ea] flex-wrap">
           <div className="flex flex-col gap-10 w-100">
